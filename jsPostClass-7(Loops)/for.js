@@ -3,19 +3,49 @@
 // * =======================================================
 
 console.log(" **** FOR ****");
-// ?10 kere konsola Merhaba yazdıran uygulamayı for döngüsü ile
-// yazınız
+// for (let i = 1; i < 4; i++) {
+//   console.log("Merhaba");
+// }
 
-// //? 100 adet cikti veren kodu yaziniz.
+// ?10 kere konsola Merhaba yazdıran uygulamayı for döngüsü ile
+for (let i = 1; i <= 10; i++) {
+  //   console.log(i, "Merhaba");
+  //   console.log(`${i}.Merhaba`);
+  //   console.log("hüseyin");
+  //   document.querySelector("#for").innerHTML += "<br/>" + "Merhaba";
+}
+
+// ?10 kere konsola isminizi yazdıran uygulamayı for döngüsü ile yazınız
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log("Hüseyin");
+//   document.querySelector("#for").innerHTML = "Merhaba";
+// }
+
+//? 100 adet cikti veren kodu yaziniz.
+// let x = 1;
+// console.log(x);
+// let y = x++;
+// console.log(y);
+// console.log(x);
+
+// for (let i = 1; i <= 5; i++) {
+//   document.querySelector("#for").innerHTML += "<br/>" + i + "." + "=" + i;
+//   console.log(i ** 2);
+// }
+// document.querySelector("#for").innerHTML += "<br/>" + i;
+
+// for (let i = 0; i <= 5; ++i) {
+//   document.querySelector("#for").innerHTML += "<br/>" + i;
+// }
 
 // for (let i = 1; i <= 100; i++) {
-
-//   console.log(`${i}-FS14`)
+//   console.log(`${i}-FS14`);
 // }
 
-// for (let i = 1; i <= 100; i *= 2) {
-//   console.log(`${i}-FS14`)
-// }
+for (let i = 1; i <= 100; i *= 2) {
+  console.log(`${i}-FS14`);
+}
 // 1 - FS14
 // 2 - FS14
 // 4 - FS14
