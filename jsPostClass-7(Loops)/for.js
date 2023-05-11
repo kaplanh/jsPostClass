@@ -8,12 +8,12 @@ console.log(" **** FOR ****");
 // }
 
 // ?10 kere konsola Merhaba yazdıran uygulamayı for döngüsü ile
-for (let i = 1; i <= 10; i++) {
-  //   console.log(i, "Merhaba");
-  //   console.log(`${i}.Merhaba`);
-  //   console.log("hüseyin");
-  //   document.querySelector("#for").innerHTML += "<br/>" + "Merhaba";
-}
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i, "Merhaba");
+//   console.log(`${i}.Merhaba`);
+//   console.log("hüseyin");
+//   document.querySelector("#for").innerHTML += "<br/>" + "Merhaba";
+// }
 
 // ?10 kere konsola isminizi yazdıran uygulamayı for döngüsü ile yazınız
 
@@ -43,9 +43,9 @@ for (let i = 1; i <= 10; i++) {
 //   console.log(`${i}-FS14`);
 // }
 
-for (let i = 1; i <= 100; i *= 2) {
-  console.log(`${i}-FS14`);
-}
+// for (let i = 1; i <= 100; i *= 2) {
+//   console.log(`${i}-FS14`);
+// }
 // 1 - FS14
 // 2 - FS14
 // 4 - FS14
@@ -55,6 +55,14 @@ for (let i = 1; i <= 100; i *= 2) {
 // 64 - FS14
 
 // //? 1 den n kadar sayilari toplayan kodu yaziniz.
+// const n = 10;
+// let toplam = 0;
+
+// for (let i = 1; i <= n; i++) {
+//   toplam += i;
+// }
+
+// console.log(toplam);
 
 // const n = prompt("Enter your number")
 // let sum = 0 //* Global degisken
@@ -67,6 +75,7 @@ for (let i = 1; i <= 100; i *= 2) {
 // }
 // // console.log(i)  //! Error
 // console.log(`SUM: ${sum}`)
+
 // *örnekler
 //?1- 1 den 10 kadar olan sayıların toplamını yazdıran program:
 
@@ -76,6 +85,26 @@ for (let i = 1; i <= 100; i *= 2) {
 // NOT: n prompt ile dışarıdan girilebilir
 
 //? 3- 0-100 Arasinda n adet rasgele tamsayi sayi ureten kodu
+
+// const adet = +prompt("Kac adet rastgele sayi istiyorsunuz: ");
+
+// for (let i = 1; i <= adet; i++) {
+//     //   console.log(Math.random() * 100);
+// console.log(Math.floor(Math.random() * 100));
+// }
+
+// const sabitSayi = 57.53137630850944;
+// console.log(sabitSayi);
+// console.log(Math.floor(sabitSayi));
+// console.log(Math.ceil(sabitSayi));
+// console.log(Math.round(sabitSayi));
+// console.log(Math.trunc(sabitSayi));
+
+// *Math.floor() =>en yakin alt tamsayiya yuvarlar
+//* Math.ceil() =>en yaki ust tamsayiya yuvarlar
+//* Math.round() => degerine gore yuvarlar.
+//* Math.trunc() => kesirli sayinin tam kismini alir.
+
 //? for dongusu ile yaziniz..
 //? Math.random() => 0 - 1 arasinda rasgele bir sayi üretir.
 
@@ -86,11 +115,6 @@ for (let i = 1; i <= 100; i *= 2) {
 //   //   rasgeleSayi++ //*!Uncaught TypeError: Assignment to constant variable.
 //   console.log(`${sayac}. sayiniz : ${rasgeleSayi}`);
 // }
-//* NOT:
-//* Math.floor() =>en yakin alt tamsayiya yuvarlar
-//* Math.ceil() =>en yaki ust tamsayiya yuvarlar
-//* Math.round() => degerine gore yuvarlar.
-//* Math.trunc() => kesirli sayinin tam kismini alir.
 
 //? ODEV1: Girilen bir sayinin Asal olup olmadigini yazdiran kodu
 //? for dongulerini kullanarak yaziniz.
@@ -99,3 +123,57 @@ for (let i = 1; i <= 100; i *= 2) {
 //* 1 ve kendisinden başka böleni olmayan sayılar ASAL sayılardır.
 //* Eğer girilen sayı, herhangi bir sayıya tam bölünüyorsa diğer sayıları kontrol etmeye gerek yoktur. ASAL DEĞİL diyebiliriz.
 //* break deyimi ile dongu bir koşul gerçekleştiğinde kırılabilir.
+
+// ?1.yol
+// let sayi = +prompt("Enter a number");
+
+// if (sayi === 2) {
+//   console.log(`${sayi} asaldir`);
+// } else if (sayi === 1) {
+//   console.log(`${sayi} asal degildir`);
+// } else {
+//   for (let i = 2; i < sayi; i++) {
+//     if (sayi % i === 0) {
+//       console.log(`${sayi} asal degildir`);
+//       break;
+//     } else {
+//       console.log(`${sayi} asaldir`);
+//     }
+//   }
+// }
+
+// ?2.yol
+// let sayi = +prompt("Enter a number");
+// let sayac = 0;
+
+// if (sayi == 1) {
+//   sayac += 1;
+// } else {
+//   for (let i = 2; i < sayi; i++) {
+//     if (sayi % i == 0) {
+//       sayac += 1;
+//     } else {
+//       sayac = sayac;
+//     }
+//   }
+// }
+
+// console.log(sayac ? "Asal degil" : "Asal");
+
+// ?3.yol
+
+// const sayi = +prompt("Pozitif Bir Sayiyi Giriniz: ");
+// let flag = true;
+
+// if (sayi == 1) {
+//   flag = false;
+// } else {
+//   for (let i = 2; i < sayi; i++) {
+//     if (sayi % i == 0) {
+//       flag = false;
+//       break;
+//     }
+//   }
+// }
+
+// console.log(flag ? "Asal" : "Asal degil");
