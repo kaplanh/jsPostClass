@@ -191,3 +191,5 @@ console.log(" **** FOR ****");
 // console.log(
 //   isPrime <= 1 ? "Hic Asal değil" : count > 0 ? "Asal degil" : "Asal"
 // );
+
+// ?fıbonaccı
