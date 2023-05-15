@@ -20,13 +20,13 @@ console.log("** FUNC DECLARATION **");
 //! Declaration (Fonksiyonun tanimlanmasi)
 // function yazdirMerhaba() {
 //   // alert("Merhaba FS14")
-//   console.log("Merhaba FS14")
+//   console.log("Merhaba FS14");
 // }
 
 //! Declaration (Fonksiyonun cagrilmasi)
-// yazdirMerhaba() //! invoke, call
-// yazdirMerhaba() //! invoke, call
-// yazdirMerhaba() //! invoke, call
+// yazdirMerhaba(); //! invoke, call
+// yazdirMerhaba(); //! invoke, call
+// yazdirMerhaba(); //! invoke, call
 
 //* ORNEK2:
 //*****************************************/
@@ -36,13 +36,13 @@ console.log("** FUNC DECLARATION **");
 //   console.log(message, name);
 // }
 // yazdirParametre();
-// yazdirParametre("Hello", "FS15");
+// yazdirParametre("Hello");
 // yazdirParametre("Salut", "FS16");
 // yazdirParametre("Hola", "FS17");
 // yazdirParametre(12.4, true);
 
 //! Parametre listesi (default deger atama)
-// function yazdirParametre(message, name = "Cohort14") {
+// function yazdirParametre(message = 1, name = "Cohort14") {
 //   console.log(message, name);
 // }
 // yazdirParametre();
@@ -62,12 +62,10 @@ console.log("** FUNC DECLARATION **");
 //* ORNEK3:
 //*****************************************/
 
-// function calculate(name, yearOfBirth) {
-//   const age = 2023 - yearOfBirth;
-//   console.log(`${name} is ${age} years old`);
+// function yasHesabi(name, dtarihi) {
+//   let yasiniz = `${name} ${2023 - dtarihi} yasindadir `;
+//   console.log(yasiniz);
 // }
-// calculate("Ahmet", 1990);
-// calculate("Ismmet", 1890);
 
 //* ORNEK4:(önce new Date() object ini incele)
 //*****************************************/
@@ -85,7 +83,7 @@ console.log("** FUNC DECLARATION **");
 
 //* new Date() object:
 //*****************************************/
-// console.log(new Date());//? Sistem tarihi ve saatini verir.
+// console.log(new Date()); //? Sistem tarihi ve saatini verir.
 // console.log(new Date().getFullYear());
 // console.log(new Date().getMonth());
 // console.log(new Date().getDay());
@@ -113,16 +111,18 @@ console.log("** FUNC DECLARATION **");
 
 // function add(num1, num2) {
 //   const sum = num1 + num2;
+//   // console.log(sum);
 //   return sum;
 // }
 
 // function addShort(num1, num2) {
+//   // console.log((num1 + num2) / (num1 * num2));
 //   return (num1 + num2) / (num1 * num2);
 // }
 
-// const result1 = add(3, 5);
-// const result2 = add(5, 9);
-// const result3 = addShort(5, 9);
+// const result1 = add(3, 5); //8
+// const result2 = add(5, 9); //14
+// const result3 = addShort(5, 9); //14/45
 
 // console.log(result1, result2);
 // console.log(result3);
@@ -161,3 +161,22 @@ console.log("** FUNC DECLARATION **");
 // console.log(`${num} is ${isEvenOrOdd(num)}`);
 //* ORNEK8:
 //*******************************************/
+//? Console'dan girilen bir sayininnegatif positif veya 0 olddgunu
+//? hesaplayan ve sonucu ana programa donduren kodu fonksiyonlar
+//? ile yaziniz.
+
+// console.log(negatifOrPositif(2));
+
+// function negatifOrPositif(num) {
+//   if (num > 0) {
+//     let result;
+//     result = `${num}-Positif`;
+//   } else if (num < 0) {
+//     result = `${num}-Negatif`;
+//   } else {
+//     result = `${num}-Sifirdir`;
+//   }
+//   return result;
+// }
+
+// console.log(negatifOrPositif(2))=;
