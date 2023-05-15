@@ -161,34 +161,3 @@ console.log("** FUNC DECLARATION **");
 // console.log(`${num} is ${isEvenOrOdd(num)}`);
 //* ORNEK8:
 //*******************************************/
-
-//? Console'dan girilen bir sayininnegatif positif veya 0 olddgunu
-//? hesaplayan ve sonucu ana programa donduren kodu fonksiyonlar
-//? ile yaziniz.
-
-// function negatifOrPositif(num) {
-//   if (num > 0) {
-//     let result;
-//     result = "Positif";
-//   } else if (num < 0) {
-//     result = "Negatif";
-//   } else {
-//     result = "Sifirdir";
-//   }
-//   return result;
-// }
-
-// negatifOrPositif(2);
-// function negatifOrPositif(num) {
-//   if (num > 0) {
-//     let result;
-//     result = `${num}-Positif`;
-//   } else if (num < 0) {
-//     result = `${num}-Negatif`;
-//   } else {
-//     result = `${num}-Sifirdir`;
-//   }
-//   return result;
-// }
-
-// negatifOrPositif(2);
