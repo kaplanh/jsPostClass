@@ -180,3 +180,13 @@ console.log("** FUNC DECLARATION **");
 // }
 
 // console.log(negatifOrPositif(2))=;
+// *NOT
+// bu yazim seklinde fonksiyon tanimlanmadan öncede cagriabiliyor
+// yazdirMerhaba() //? hoisting oluyor (var değişkenleri)
+
+// function yazdirMerhaba() {
+//   console.log("Merhaba FS14")
+// }
+// yazdirMerhaba()
+
+//* ----------------------------
