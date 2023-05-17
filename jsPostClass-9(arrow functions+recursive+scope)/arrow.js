@@ -67,6 +67,21 @@ console.log("*** ARROW ****");
 //* ORNEK: Dairenin Alani
 //******************************************/
 //* yaricap kullanicidan alinan dairenin alanini hesaplayan fonk nu arraw yöntemi ile yaz
+
+// const r = Number(prompt("r:"));
+// let alan = (r) => {
+//   return Math.PI * r ** 2;
+// };
+// console.log("Alan =", alan(r), typeof alan(r));
+// console.log("Alan =", Math.round(alan(r)), typeof Math.round(alan(r)));
+// console.log("Alan =", alan(r).toFixed(2), typeof alan(r).toFixed(2));
+// console.log("Alan =", alan(r).toPrecision(5), typeof alan(r).toPrecision(5));
+// console.log(
+//   "Alan =",
+//   Number(alan(r).toFixed(2)),
+//   typeof Number(alan(r).toFixed(2))
+// );
+
 // alan = pi*r**2
 // const r = Number(prompt("r:"));
 // const alan = (r) => Math.PI * r ** 2;
@@ -76,64 +91,13 @@ console.log("*** ARROW ****");
 // console.log("Alan: ", alan(r).toPrecision(5));
 // console.log("Alan: ", Math.round(alan(r)));
 
-//* ORNEK: Bir fonksiyon icerisinde baska fonksiyonlar cagrilabilir (Hesap Makinası)
-//**************************************************/
-const add = (n1, n2) => n1 + n2;
-const sub = (n1, n2) => n1 - n2;
-const mul = (n1, n2) => n1 * n2;
-const div = (n1, n2) => n1 / n2;
+// * ÖRNEK yükseklik ve taban degeri kullanicidan alinan ücgenin alani
 
-const compute = (n1, n2, operator) => {
-  let result = 0;
-  switch (operator) {
-    case "+":
-      // result = n1 + n2
-      result = add(n1, n2);
-      break;
-    case "-":
-      // result = n1 - n2
-      result = sub(n1, n2);
-      break;
-    case "x":
-    case "*":
-      // result = n1 * n2
-      result = mul(n1, n2);
-      break;
-    case "/":
-      // result = n1 - n2
-      result = div(n1, n2);
-      break;
-    default:
-      alert("Incorrect Operator");
-      result = "";
-    //   result = "Error";
-  }
-  return result;
-};
-const n1 = +prompt("First Number:");
-const operator = prompt("Operator:");
-const n2 = +prompt("Second Number:");
+// const calculateArea = (floor, height) => {
+//   let area = (floor * height) / 2;
+//   return console.log(`Area is ${area}`);
+// };
 
-console.log(`${n1}${operator}${n2} = ${compute(n1, n2, operator)}`);
-
-//* ORNEK: Girilen sayinin faktoriyelini hesaplayan programı fonksiyonlar yardımıyla kodlayiniz.
-
-//? Faktoriel terimleri:  n! = n * (n-1)!
-//? Fakto(5) => 5.4.3.2
-
-//! ITERASYON YONTEMI ILE
-const fakto = (n) => {
-  let f = 1;
-  for (let i = n; i > 1; i--) {
-    f = f * i;
-  }
-  return f;
-
-  //   for (let i = 2; i <= n; i++) {}
-};
-
-const number = +prompt("n:");
-
-number < 0
-  ? alert("Number should be bigger than zero")
-  : console.log(`Fakto(${number})= ${fakto(number)}`);
+// const floor = +prompt("Please enter a floor number");
+// const height = +prompt("Please enter a height number");
+// calculateArea(floor, height);
