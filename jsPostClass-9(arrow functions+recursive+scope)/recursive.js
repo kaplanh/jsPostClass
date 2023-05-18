@@ -15,22 +15,62 @@ console.log("*** RECURSION ***");
 
 //? Fakto(5) => 5.4.3.2
 
-const fakto = (n) => {
-  if (n <= 1) {
-    return 1;
-  } else {
-    return n * fakto(n - 1);
-  }
-};
+// const fakto = (n) => {
+//   if (n <= 1) {
+//     return 1;
+//   } else {
+//     return n * fakto(n - 1);
+//   }
+// };
 
-const number = +prompt("n:");
+// const number = +prompt("n:");
 
-number < 0
-  ? alert("Number should be bigger than zero")
-  : console.log(`Fakto(${number})= ${fakto(number)}`);
+// number < 0
+//   ? alert("Number should be bigger than zero")
+//   : console.log(`Fakto(${number})= ${fakto(number)}`);
 
 //* ORNEK: Bir fonksiyon icerisinde baska fonksiyonlar cagrilabilir (Hesap Makinası)
 //**************************************************/
+
+const topla = (n1, n2) => n1 + n2;
+const cikar = (n1, n2) => n1 - n2;
+const carp = (n1, n2) => n1 * n2;
+const böl = (n1, n2) => n1 / n2;
+
+const n1 = Number(prompt("n1:"));
+const n2 = Number(prompt("n2:"));
+const operator = prompt("('+', '-', '*', '/')  operator:");
+
+const islem = (n1, operator, n2) => {
+  let sonuc = 0;
+  switch (operator) {
+    case "+":
+      // sonuc = n1 + n2;
+      sonuc = topla(n1, n2);
+      break;
+    case "-":
+      // sonuc = n1 - n2;
+      sonuc = cikar(n1, n2);
+      break;
+    case "*":
+      // sonuc = n1 * n2;
+      sonuc = carp(n1, n2);
+      break;
+    case "/":
+      // sonuc = n1 / n2;
+      sonuc = böl(n1, n2);
+      break;
+
+    default:
+      alert("Yanlis operatör girdiniz");
+      sonuc = "";
+      break;
+  }
+  return sonuc;
+};
+
+console.log(`${n1}${operator}${n2} = ${islem(n1, operator, n2)}`);
+
 // const add = (n1, n2) => n1 + n2;
 // const sub = (n1, n2) => n1 - n2;
 // const mul = (n1, n2) => n1 * n2;
