@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top left, #2e619c, #c0ceee);
+}
+h1 {
+  color: brown;
+}
