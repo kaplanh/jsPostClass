@@ -1,111 +1,114 @@
+//* "use strict";siki js
+
 //!Array
-// const arr = [100, 'CW', false]
-// console.log(arr)
+// const arr = [100, "CW", false];
+// console.log(arr);
 
-// const dizi = new Array(100, 'CW', true);
+// const dizi = new Array(100, "CW", true);
 
-// console.log(dizi)
+// console.log(dizi);
 
-// const dizi2 = new Array(10)
+// const dizi2 = new Array();
+// const dizi3 = new Array(10);
 
-// console.log(dizi2)
+// console.log(dizi2);
+// console.log(dizi3);
 
-// const colors = ['Red','Green','Blue']
+// const colors = ["Red", "Green", "Blue"];
 
-// console.log(colors[0])
-// console.log(colors[colors.length - 1]) //son elaman
-// console.log(colors[colors.length - 2]) //sondan ikinciye ulaşım.
-// console.log(colors[-1]) //undefined
-// console.log(colors[56]) //undefined
+// console.log(colors[0]);
+// console.log(colors[colors.length - 1]); //son elaman
+// console.log(colors[colors.length - 2]); //sondan ikinciye ulaşım.
+// console.log(colors[-1]); //undefined
+// console.log(colors[56]); //undefined
 
-//Array is Array
-// const colors = ['Red','Green','Blue'];
+// !Array is Array
+// const colors = ["Red", "Green", "Blue"];
 // console.log(typeof colors);
 
-// console.log(Array.isArray(colors)) //true
-// console.log(colors instanceof Array) //true
+// console.log(Array.isArray(colors)); //true
+// console.log(colors instanceof Array); //true
 
-// const variables = '1';
-// console.log(Array.isArray(variables)) //false
-// console.log(variables instanceof Array) //false
+// const variables = "1";
+// console.log(Array.isArray(variables)); //false
+// console.log(variables instanceof Array); //false
 
-//Strings immutable değiştirilemez
-// let str = 'Brown';
-// console.log(str[0])
-// str[0]='b';
-// console.log(str)
+// !Strings immutable değiştirilemez
+// let str = "Brown";
+// console.log(str[0]);
+// str[0] = "b";
+// console.log(str);
 
 // str = 'brown'
 
-//Arrayle mutable yani değiştirilebilir
-// const colors = ['Red','Green','Blue'];
+// !Arrayle mutable yani değiştirilebilir
+// const colors = ["Red", "Green", "Blue"];
 
-// colors[1] = 'yellow' //mevcudu değiştirir
+// colors[1] = "yellow"; //mevcudu değiştirir
 
-// console.log(colors)
+// console.log(colors);
 
 // //ekleme yapar
-// colors[3]= 5
+// colors[3] = 5;
 
-// console.log(colors)
+// console.log(colors);
 
-// let c = 'Pink'
+// let c = "Pink";
 
-// colors[4] = c
+// colors[4] = c;
 
-// console.log(colors)
+// console.log(colors);
 
-// const colors = ['Red','Green','Blue'];
+// const colors = ["Red", "Green", "Blue"];
 
-// colors[6] = 2
-// console.log(colors)
-// console.log(colors.length)
-// console.log(colors[3])
+// colors[6] = 2;
+// console.log(colors);
+// console.log(colors.length);
+// console.log(colors[3]);
 
-// colors[100] = 'Pink';
+// colors[100] = "Pink";
 
-// console.log(colors)
+// console.log(colors);
 
-//primitiveler
-/* let a = 5;
-let b = a;
-console.log(a)
-console.log(b)
+//!primitiveler
+// let a = 5;
+// let b = a;
+// console.log(a);
+// console.log(b);
 
-a= 6;
-console.log(b)
+// a = 6;
+// console.log(a);
+// console.log(b);
 
-b=a
-console.log(b) */
+// b = a;
+// console.log(b);
 
-//non-primitiveler
+//!non-primitiveler
 
-/* let arr1 = [1,2,'Three',false];
+let arr1 = [1, 2, "Three", false];
 
 const arr2 = arr1;
 
-// console.log(arr1)
-// console.log(arr2)
+console.log(arr1);
+console.log(arr2);
 
-// arr1[0]=0
+arr1[0] = 0;
 
-// console.log(arr1)
-// console.log(arr2)
+console.log(arr1);
+console.log(arr2);
+const c = ["2"];
+console.log(c);
 
-const c = ['2'];
-console.log(c)
+console.log(Boolean(c));
 
-console.log(Boolean(c))
+const d = ["2"];
+console.log(c == d); //false çünkü adresleri farklı
 
-const d = ['2']
-console.log(c == d) //false çünkü adresleri farklı
+console.log(arr1 == arr2); // true çünkü adresler aynı
 
-console.log(arr1 == arr2) // true çünkü adresler aynı
+arr1 = ["four"]; //let ile tanımlandığı için onaylanır
 
- arr1 = ['four'] //let ile tanımlandığı için onaylanır
-
- arr2 = ['four'] // const ile tanımlandığı için onay verilmez */
-
+arr2 = ["four"]; // const ile tanımlandığı için onay verilmez
 
 //!Array metodları
 
