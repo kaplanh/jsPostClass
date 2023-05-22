@@ -1,4 +1,5 @@
-//* "use strict";siki js
+//* "use strict";
+//?use strict icin bakiniz => https://www.yusufsezer.com.tr/javascript-use-strict/
 
 //!Array
 // const arr = [100, "CW", false];
@@ -90,12 +91,13 @@ let arr1 = [1, 2, "Three", false];
 const arr2 = arr1;
 
 console.log(arr1);
-console.log(arr2);
+console.log(arr2); // ?nedenini anlamak icin yandaki Stack - Heap fotosuna bak
 
 arr1[0] = 0;
 
 console.log(arr1);
 console.log(arr2);
+
 const c = ["2"];
 console.log(c);
 
