@@ -371,10 +371,10 @@
 
 //?delete
 // *Dizi öğeleri, JavaScript operatörü silme kullanılarak silinebilir. Silme kullanılması, dizide tanımsız delikler bırakır. Bunun yerine pop() veya shift() kullanın.
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-delete fruits[0];
-console.log(fruits); //[empty, 'Orange', 'Apple', 'Mango']
-console.log(fruits[0]); //undefined
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// delete fruits[0];
+// console.log(fruits); //[empty, 'Orange', 'Apple', 'Mango']
+// console.log(fruits[0]); //undefined
 
 //?flat()
 // Bir diziyi düzleştirme, bir dizinin boyutsallığını azaltma işlemidir.
