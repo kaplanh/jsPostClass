@@ -304,15 +304,15 @@
 
 //?sort
 
-// const arr = [55, 5, 22, 2, 11, 1, 111];
+const arr = [0, 55, 5, 22, 2, 11, 1, 111];
 // arr.sort();
-// console.log(arr);
+// console.log(arr);[1, 11, 111, 2, 22, 5, 55];
 
-// // *ascending sorting(artan siralama-kücükten büyüge dogru)
-// arr.sort((a, b) => a - b);
-// console.log(arr); // [ 1, 2, 5, 11, 22, 55, 111 ]
+// *ascending sorting(artan siralama-kücükten büyüge dogru)
+arr.sort((a, b) => (a = b));
+console.log(arr); // [ 1, 2, 5, 11, 22, 55, 111 ]
 
-// // *descending sorting(azalan siralama-büyükten kücüge dogru)
+// *descending sorting(azalan siralama-büyükten kücüge dogru)
 // arr.sort((a, b) => b - a); //numeritik olarak sıralar
 // console.log(arr); // [ 111, 55, 22, 11, 5,  2,  1 ]
 
