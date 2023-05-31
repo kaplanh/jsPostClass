@@ -38,6 +38,8 @@ console.log("******* Objects *********");
 // myCar.speed = 7
 
 // console.log(myCar.speed)
+
+
 // console.log(myCar["model"])
 
 // console.log(myCar)
@@ -51,7 +53,7 @@ console.log("******* Objects *********");
 //   this.name = name
 //   this.age = age
 //   this.salary = salary
-//   // console.log(this)
+//   console.log(this)
 // }
 // console.log(Personel)
 
@@ -76,13 +78,19 @@ console.log("******* Objects *********");
 //   speed: 5,
 //   color: ["pink", "black", "blue", "green"],
 //   myObject: { ad: "ali", soyad: "veli", yas: 34 },
+//   ali: function () {
+//     return this.brand+ ' ' + this.model
+//   }
 // };
 // console.log(car);
 // console.log(car.brand);
+// console.log(car.model);
 // console.log(car.color);
+// console.log(car.myObject);
+// console.log(car.ali);
+// console.log(car.ali());
 // console.log(car.color[0]); //? pink
 // console.log(car.color[0][0]); //? p
-// console.log(car.myObject);
 // console.log(car.myObject.ad);
 // console.log(car.myObject.ad[0]);
 
@@ -102,7 +110,9 @@ console.log("******* Objects *********");
 //   myObject: { ad: "ali", soyad: "veli", yas: 34 },
 // };
 // console.log(car);
-// console.log("ENGINE:", car["engine"]) //? objeAdi["keyAdi"]
+// // console.log("ENGINE:", car["engine"]) //? objeAdi["keyAdi"]
+// console.log(car.speed);
+// console.log(car['speed']);
 
 // const myKey = prompt(
 //   "Araba ile ilgili Neyi ogrenmek istersiniz: speed, color,engine ..."
@@ -113,53 +123,57 @@ console.log("******* Objects *********");
 //* ---------------------------------------------------------
 //! Objenin degerinin degisitirilmesi (write)
 //* ---------------------------------------------------------
-// const car = {
-//   brand: "Mercedes",
-//   model: 2020,
-//   engine: 2000,
-//   speed: 5,
-//   color: ["pink", "black", "blue", "green"],
-//   myObject: { ad: "ali", soyad: "veli", yas: 34 },
-// };
+const car = {
+  brand: "Mercedes",
+  model: 2020,
+  engine: 2000,
+  speed: 5,
+  color: ["pink", "black", "blue", "green"],
+  myObject: { ad: "ali", soyad: "veli", yas: 34 },
+};
 // console.log(car);
 // car.speed = 7;
 // car.color = "Morcivert";
 // car.class = "E";
+// car['veli']= 21
 
 // console.log(car);
+
 
 //!  Uncaught TypeError: Assignment to constant variable.
 // ? Not:const ile tranimlanan bir obje yeniden tanimlanamayacagi gibi degeri de degistirilemez ancak icinde tuttugu key value lar degistirilebilir
 // car = {
 //   deneme: "1",
 // }
+// console.log(car)
 
 //* ======================================================
 //!              Object Metotlari
 //* ======================================================
 // ?this in declaration and expression function
-// const personel = {
-//   name: "Ahmet",
-//   surname: "Canan",
-//   dob: 1990,
-//   salary: 30000,
-//   drivingLicense: true,
-//   calculateAge: function () {
-//     console.log(this); //? personel objesini refere eder.
-//     return new Date().getFullYear() - this.dob;
-//   },
-
+const personel = {
+  name: "Ahmet",
+  surname: "Canan",
+  dob: 1990,
+  salary: 30000,
+  drivingLicense: true,
+  calculateAge: function () {
+    // console.log(this); //? personel objesini refere eder.
+    return new Date().getFullYear() - this.dob;
+  },
+  
 // ?this in arrow function
-//   summary: () => {
-//     console.log(this); //? window objesini refere eder.
-//     return `${this.name} is ${this.calculateAge()} years old`;
-//   },
-// };
+  summary: () => {
+    // console.log(this); //? window objesini refere eder.
+    return `${this.name} is ${this.calculateAge()} years old`;
+  },
+};
+console.log(personel);
+console.log(personel.calculateAge());
+console.log(personel.name + " " + personel.surname);
 
-// console.log(personel.name + " " + personel.surname);
-
-// console.log("AGE:", personel.calculateAge());
-// console.log("AGE:", personel.summary());
+console.log("AGE:", personel.calculateAge());
+console.log("AGE:", personel.summary());
 
 //! NOT: arrow fonksiyonlari ozellikle callback fonksiyonu olarak
 //! kullanilmak ve bu fonksiyonlarda this keyword kullanim
@@ -173,16 +187,17 @@ console.log("******* Objects *********");
 //! JSON => Javascript Object Notation
 //********************************************************
 
-const team = [
-  { name: "Ahmet", surname: "Can", job: "Developer", age: 30 },
-  { name: "Mary", surname: "Bary", job: "tester", age: 22 },
-  { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
-];
+// const team = [
+//   { name: "Ahmet", surname: "Can", job: "Developer", age: 30 },
+//   { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+//   { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+// ];
 
 // console.log(team);
 // console.log(team[1]);
 // console.log(team[1].name); //? Mary
 // console.log(team[2].age); //? 20
+// console.log(team[2].a); //? 20
 
 // console.log("************")
 
