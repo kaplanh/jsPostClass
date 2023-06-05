@@ -6,12 +6,11 @@ console.log("**** CREATE NODE ****");
 
 // //? 1- olustur
 const newP = document.createElement("p");
-const newH2 = document.createElement('h2')
 
 // //? 2-Eger text tabanlı bir element ise text dugumunu olustur
 const text = document.createTextNode("Bu bir yeni p elementidir.");
 // const text = document.createTextNode(langInput.value)
-newH2.appendChild(text)
+newP.appendChild(text);
 // //? 3- Olusturulan text dugumunu yeni elemente bagla (append)
 
 // console.log(newP)
@@ -25,70 +24,87 @@ newH2.appendChild(text)
 // //! Element.before()  ve Element.after() appenChild gibi aslında bir elementi DOM Tree'ye baglar.
 const itemListSection = document.querySelector(".item-list");
 itemListSection.after(newP);
-const header = document.querySelector('#header')
-header.after(newH2)
 
 // itemListSection.after(newH2);
 
+// *örnekler
+// ?örnek-1
+const newLi = document.createElement("li");
+const isim = document.createTextNode("Murat");
+
+newLi.appendChild(isim);
+const ul = document.querySelector("#ali li:nth-child(3)");
+ul.before(newLi);
+
+// ?örnek-2
+const span1 = document.createElement("span");
+const text2 = document.createTextNode(": Sen mi büyüksün ben mi?asd");
+span1.appendChild(text2);
+const ul1 = document.querySelector("#ali li:nth-child(5)");
+ul1.appendChild(text2);
+
 // //* ------- ID, CLASS GIBI OZELLIKLERI ATAMA ------
 // //? 1) Yontem
-// newP.id = "paragraf"
-// newP.className = "par center"
-// newP.name = "deneme"
+newP.id = "paragraf";
+newP.className = "par center";
+newP.name = "deneme";
 
 // //? 2) setAttribute()
-// newP.setAttribute("id", "new-id")
-// newP.setAttribute("class", "new-class")
-// newP.setAttribute("name", "new-class")
-// newP.setAttribute("type", "button")
+// newP.setAttribute("id", "new-id");
+// newP.setAttribute("class", "new-class");
+// newP.setAttribute("name", "new-class");
+// newP.setAttribute("type", "button");
 
 // //? 3) classList
-// newP.classList.add("bg-danger", "border")
+newP.classList.add("bg-danger", "border");
 
-// console.log(newP.classList.contains("new-class"))
+console.log(newP.classList.contains("new-class"));
 
 // //* classList.contains()
-// if (newP.classList.contains("border")) {
-//   newP.classList.add("border-success")
-// }
+if (newP.classList.contains("border")) {
+  newP.classList.add("border-success");
+}
 
 // //* classList.remove()
-// if (newP.classList.contains("new-class")) {
-//   newP.classList.remove("new-class")
-// }
+if (newP.classList.contains("new-class")) {
+  newP.classList.remove("new-class");
+}
 
 // //* classList.toggle()  (bir class varsa kaldirir yoksa ekler)
-// newP.classList.toggle("bg-danger")
+newP.classList.toggle("bg-danger");
+
+if (newP.classList.toggle("ali")) {
+}
 
 // //* ------- ID, CLASS GIBI OZELLIKLERINI OKUMA ------
 // //? 1) Yontem
-// console.log(newP.id)
-// console.log(newP.className)
+console.log(newP.id)
+console.log(newP.className)
 
 // //? 2) getAttribute()
-// console.log(newP.getAttribute("type"))
-// console.log(newP.getAttribute("class"))
+console.log(newP.getAttribute("type"))
+console.log(newP.getAttribute("class"))
 
 // //* ------- YENI BIR ELEMENT OLUSTURMA (INNERHTML)------
-// const ul = document.querySelector("ul")
+const ul2 = document.querySelector("ul")
 
-// ul.innerHTML += `
-//    <li>C++</li>
-//    <li>java</li>
-//    <li>C</li>
-//    <li>go</li>`
+ul.innerHTML += `
+   <li>C++</li>
+   <li>java</li>
+   <li>C</li>
+   <li>go</li>`
 
 // //* ------- YENI BIR ELEMENT OLUSTURMA (INNERHTML)------
 
-// const newDiv = document.createElement("div")
-// newDiv.id = "my-div"
-// itemListSection.after(newDiv)
+const newDiv = document.createElement("div")
+newDiv.id = "my-div"
+itemListSection.after(newDiv)
 
-// newDiv.innerHTML += `
-// <h2 class="par center">Languages</h2>
-// <ul>
-//   <li>C++</li>
-//   <li>java</li>
-//   <li>C</li>
-//   <li>go</li>
-// </ul>`
+newDiv.innerHTML += `
+<h2 class="par center">Languages</h2>
+<ul>
+  <li>C++</li>
+  <li>java</li>
+  <li>C</li>
+  <li>go</li>
+</ul>`
