@@ -52,7 +52,7 @@ localStorage.setItem("veri1", veri1);
 sessionStorage.setItem("veri1", veri1);
 
 // *string,number gibi primitive verileri local-sessionStorage den cagiri '
-let veri = localStorage.getItem("veri1");
+let veri = localStorage.getItem("veri1");//?eger veri1 number bir degerse o zaman string olarak gelen degeri number yapmamiz lazim Number(localStorage.getItem("veri1"))
 let veri2 = sessionStorage.getItem("veri1"); //?eger veri1 number bir degerse o zaman string olarak gelen degeri number yapmamiz lazim Number(sessionStorage.getItem("veri1"))
 // console.log(veri);
 // console.log(veri + ' ali');
