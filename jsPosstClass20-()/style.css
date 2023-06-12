@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #e1e3ea;
+  height: 100vh;
+}
+
+.container {
+    width: 70%;
+    > h1{
+        color: white;
+        font-size: 40px;
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 0.5rem .5rem 0 0;
+        background-color: #de3f53;
+        font-family: "Rajdhani",sans-serif;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 95%;
+    };
+}
+@media screen and (max-width:470px){
+    .container{
+        width: 100%;
+    };
+    
+}
+
+
+section{
+width: 100%;
+background-color: #262e4c;
+}
+ input {
+  border: none;
+  outline: none;
+  background-color: rgba(60, 73, 121, 1);
+  font-size: 18px;
+  color: white;
+  padding: 5px;
+  width: calc(100% - 80px); 
+  height: 40px;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }}
+
+  button {
+  border: none;
+  color: white;
+  background-color: rgba(29, 211, 175, 0.7);
+  font-size: 25px;
+  font-weight: 600;
+  height: 42px;
+  width: 75px;
+ border-radius: 5px;
+  &:hover {
+    background-color: rgba(0, 255, 0, 1);
+  }
+}
