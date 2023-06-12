@@ -16,50 +16,49 @@ body {
 }
 
 .container {
-    width: 70%;
-    > h1{
-        color: white;
-        font-size: 40px;
-        padding: 10px 0;
-        text-align: center;
-        border-radius: 0.5rem .5rem 0 0;
-        background-color: #de3f53;
-        font-family: "Rajdhani",sans-serif;
-    }
+  width: 70%;
+  > h1 {
+    color: white;
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: #de3f53;
+    font-family: "Rajdhani", sans-serif;
+  }
 }
 
-@media screen and (max-width:768px){
-    .container{
-        width: 95%;
-    };
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
 }
-@media screen and (max-width:470px){
-    .container{
-        width: 100%;
-    };
-    
+@media screen and (max-width: 470px) {
+  .container {
+    width: 100%;
+  }
 }
 
-
-section{
-width: 100%;
-background-color: #262e4c;
+section {
+  width: 100%;
+  background-color: #262e4c;
 }
- input {
+input {
   border: none;
   outline: none;
   background-color: rgba(60, 73, 121, 1);
   font-size: 18px;
   color: white;
   padding: 5px;
-  width: calc(100% - 80px); 
+  width: calc(100% - 80px);
   height: 40px;
   border-radius: 5px;
   &:hover {
     background-color: rgba(0, 0, 0, 0.9);
-  }}
+  }
+}
 
-  button {
+button {
   border: none;
   color: white;
   background-color: rgba(29, 211, 175, 0.7);
@@ -67,8 +66,28 @@ background-color: #262e4c;
   font-weight: 600;
   height: 42px;
   width: 75px;
- border-radius: 5px;
+  border-radius: 5px;
   &:hover {
     background-color: rgba(0, 255, 0, 1);
   }
+}
+ul {
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+
+ul li {
+  padding: 1px;
+  background-color: #262e4c;
+  border-bottom: 1px solid #3a4674;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li i {
+  padding: 1rem;
+  color: #ea0a0a;
+  cursor: pointer;
+  font-size: 1rem;
 }
