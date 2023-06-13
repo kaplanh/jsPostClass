@@ -117,6 +117,7 @@ console.log(lists);
 // //* ========================================
 
 const listeler = document.querySelectorAll("ul li")
+console.log(listeler);
 console.log(listeler.entries()) //? NodeList(5) [li.list, li.list, li.list, li.list, li.list]
 
 // listeler.forEach((li) => console.log(li))
