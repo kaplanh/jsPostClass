@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Checkout App</h1>
+    </header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list--text">My Cart <span>(3 Products)</span></li>
+        <li class="nav__list--btn">
+          Delete Products <i class="fa-regular fa-trash-can"></i>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="main__products-preview" id="products-preview">
+        <div class="main__product-painel" id="product-painel">
+          <h2 class="main__title"><small>Satıcı:</small> ClarusStore</h2>
+          <div class="main__product">
+            <figure class="main__figure">
+              <img class="main__img" src="./img/mac.jpg" alt="" />
+            </figure>
+            <div class="main__product-info">
+              <h2 class="main__product-info--title">Macbook M2 Air</h2>
+              <div class="main__product-price">
+                <p class="main__product-price--text">
+                  <strong class="dollar">1474.99</strong>
+                  <span class="line-through dollar">1694.99</span>
+                </p>
+              </div>
+              <div class="main__action">
+                <div class="main__action--btn">
+                  <div class="main__quantity-controller">
+                    <i class="fa-solid fa-minus"></i>
+                    <p class="main__quantity-controller--text" id="quantity">
+                      1
+                    </p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="main__product-removal">
+                    <button class="main__product-removal--btn">
+                      <i
+                        class="fa-regular fa-trash-can"
+                        id="remove-product"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="main__product-line-price dollar">1474.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="main__product">
+            <figure class="main__figure">
+              <img class="main__img" src="./img/keyboard.jpg" alt="" />
+            </figure>
+            <div class="main__product-info">
+              <h2 class="main__product-info--title">Apple Keyboard</h2>
+              <div class="main__product-price">
+                <p class="main__product-price--text">
+                  <strong class="dollar">185.99</strong>
+                  <span class="line-through dollar">199.99</span>
+                </p>
+              </div>
+              <div class="main__action">
+                <div class="main__action--btn">
+                  <div class="main__quantity-controller">
+                    <i class="fa-solid fa-minus"></i>
+                    <p class="main__quantity-controller--text" id="quantity">
+                      1
+                    </p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="main__product-removal">
+                    <button class="main__product-removal--btn">
+                      <i
+                        class="fa-regular fa-trash-can"
+                        id="remove-product"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="main__product-line-price dollar">185.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="main__product">
+            <figure class="main__figure">
+              <img class="main__img" src="./img/mouse.jpg" alt="" />
+            </figure>
+            <div class="main__product-info">
+              <h2 class="main__product-info--title">Apple Mouse</h2>
+              <div class="main__product-price">
+                <p class="main__product-price--text">
+                  <strong class="dollar">89.99</strong>
+                  <span class="line-through dollar">99.99</span>
+                </p>
+              </div>
+              <div class="main__action">
+                <div class="main__action--btn">
+                  <div class="main__quantity-controller">
+                    <i class="fa-solid fa-minus"></i>
+                    <p class="main__quantity-controller--text" id="quantity">
+                      1
+                    </p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="main__product-removal">
+                    <button class="main__product-removal--btn">
+                      <i
+                        class="fa-regular fa-trash-can"
+                        id="remove-product"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="main__product-line-price dollar">89.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__total">
+        <div class="main__summary">
+          <div class="main__summary--responsive">
+            <div>
+              <h4 class="main__sum-title">SELECTED PRODUCTS</h4>
+              <h2 class="main__sum-price dollar">1.099,97</h2>
+            </div>
+            <button class="main__order-btn">Finish Order</button>
+          </div>
+          <div id="total-info">
+            <div class="main__summary--info" id="cart-shipping">
+              <span>Shipping</span>
+              <span class="dollar">25,99</span>
+            </div>
+            <div class="main__summary--info" id="cart-tax">
+              <span>Tax %18</span>
+              <span class="dollar">57</span>
+            </div>
+            <div class="main__summary--info" id="cart-total">
+              <span>Total</span>
+              <span class="dollar">1250</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
