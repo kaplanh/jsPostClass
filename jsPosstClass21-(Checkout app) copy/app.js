@@ -1,10 +1,8 @@
-const vergiOrani = 0.18;
-const kargoÜcreti = 25.99;
-
 // ?events
 const ürünlerPanelDivi = document.getElementById("product-painel");
 console.log(ürünlerPanelDivi);
 
+//?Daha az event yazmak icin ve traversing yöntemlerini kullanarak islem yapabilmek icin tüm '-','+' ve cöp kutusunu kapsayan en yakin ortak parent'a tek event verdim
 ürünlerPanelDivi.addEventListener("click", (e) => {
   if (e.target.classList.contains("fa-minus")) {
     if (e.target.nextElementSibling.innerText > 1) {
@@ -18,7 +16,7 @@ console.log(ürünlerPanelDivi);
     }
   } else if (e.target.classList.contains("fa-plus")) {
     e.target.previousElementSibling.textContent++;
-    ürünCarpiBirimFiyat(e.target.closest(".main__product-info"));
+    ürünCarpiBirimFiyat(e.target.closest(".main__product-info")); //?argüman olarak tiklanan yere class'i 'main__product-info' olan en yakin parent(div dom objesi)
   } else if (e.target.classList.contains("fa-trash-can")) {
     if (confirm("Silmek istediğinizden emin misiniz?")) {
       // e.target.closest(".main__product").remove();
@@ -28,8 +26,9 @@ console.log(ürünlerPanelDivi);
   }
 });
 
+//?ürün adedine bagli olarak ortaya cikan fiyatlari bulma
 const ürünCarpiBirimFiyat = (ürünPaneli) => {
-  // let miktar = parseFloat(document.getElementById("quantity").textContent);
+  //?parametre olarak bir dom objesi verdik
   // console.log(miktar);
   let miktar = ürünPaneli.querySelector("#quantity").innerText;
   console.log(miktar);
@@ -42,13 +41,21 @@ const ürünCarpiBirimFiyat = (ürünPaneli) => {
 };
 
 const araToplam = () => {
+  //?ürün adedine bagli olarak ortaya cikan fiyatlardan ara toplami(vergi ve kargo eklenmemis) bulma islemleri
   const miktarCarpiFiyatlarListesi = document.querySelectorAll(
     ".main__product-line-price"
   ); //NodeList döndürür
-  let subTotal = 0;
+  console.log(miktarCarpiFiyatlarListesi); //?NodeList(3) [div.main__product-line-price.dollar, div.main__product-line-price.dollar, div.main__product-line-price.dollar]
+  let subTotal = 0; //?secilen ürünlerin vergi ve kargo ücreti eklenmemis tutari
   miktarCarpiFiyatlarListesi.forEach((item) => {
+    // console.log(item.innerText);//1474.99 185.99 89.99
     subTotal += parseFloat(item.innerText);
   });
+
+  //?kargo ve vergi ekleme islemleri
+  const vergiOrani = 0.18;
+  const kargoÜcreti = 25.99;
+
   const araToplamFiyat = document.querySelector(".main__sum-price");
   araToplamFiyat.innerText = subTotal.toFixed(2);
 
@@ -61,6 +68,8 @@ const araToplam = () => {
 
   const tax = document.querySelector(".card-tax");
   tax.innerText = (araToplamFiyat.innerText * vergiOrani).toFixed(2);
+
+  //?kargo ve vergi eklenmis en son fiyat
 
   const genelToplam = document.querySelector(".total");
   genelToplam.innerText = (
