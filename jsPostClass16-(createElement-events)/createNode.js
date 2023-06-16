@@ -108,3 +108,10 @@ newDiv.innerHTML += `
   <li>C</li>
   <li>go</li>
 </ul>`
+
+
+// *Not:innertext,textContent arasindaki fark nedir https://www.mehsatek.com/javascript-html-dom-innertext-ve-textcontent-kullanimi/#:~:text=1%20%E2%80%93%20innerText%2C,fark%C4%B1%20bir%20%C3%B6rnek%20%C3%BCzerinde%20inceleyelim
+
+// 1- innerText, <script> ve <style> öğeleri hariç tüm Html öğelerinin metin içeriğini döndürürken textContent tüm Html öğelerinin metin içeriğini döndürür.
+// 2 - innerText, Css ile gizlenen Html öğelerinin metnini döndürmez fakat textContent döndürür.
+// 3 - innerText, Html öğesinin içerisinden alacağımız metinde bulunan boşlukları göz ardı ederken textContent alacağımız metni bu boşluklar ile birlikte alır.
