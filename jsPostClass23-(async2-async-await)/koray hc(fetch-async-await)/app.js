@@ -13,13 +13,13 @@ fetch("https://api.github.com/users").then((response)=>{
         throw new Error('hata var')
        
     }
-    //tue ise
+    //true ise
     else{
 
         return response.json()
     }
 
-    return response.json()
+    // return response.json()
 
 }).then((data) =>{
 
@@ -54,6 +54,11 @@ const domaYaz=(data)=>{
 
 //! AWAIT YAPISI
 
+
+window.addEventListener('load',()=> {
+    getData();
+})
+
 const getData=async ()=>{
 
 
@@ -83,7 +88,7 @@ const getData=async ()=>{
 }
 
 
-getData()
+// getData()
 
 
 const domaYaz2=(gelenData)=>{

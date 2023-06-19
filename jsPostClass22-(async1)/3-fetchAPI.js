@@ -53,9 +53,9 @@
 // ******************olmasi gereken********************
   console.log("FETCH");
 
-  let veri = "";
+  // let veri = "";
 
-  fetch("https://api.github.com/user")
+  fetch("https://api.github.com/users")
     .then((res) => {
       //! Error handling
       if (!res.ok) {
