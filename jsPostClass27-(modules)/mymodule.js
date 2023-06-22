@@ -1,24 +1,24 @@
-//? ES Modules nedir?
-//* ES Modules (Ecmascript modülleri) JavaScript için bir import mekanizması sağlar. Bu mekanizma sayesinde farklı dosyalar içerisinde yer alan kodlar, diğer dosyalarda import ederek tekrar kullanılabilir hale gelmektedir.
+console.log("My Module Loaded");
+//? Named Export
+export const CALISMA_SAATI = 40;
+export let maas = 20000;
 
-//? Örnek bir ES module
-// *Bir ES modülü aşağıdaki gibi bir veya daha fazla export ifadesi içeren değişkenkler/fonksiyonlardan oluşur:
+let sayac = 0;
+export const arttir = (miktar) => {
+  sayac += miktar;
+  return sayac;
+};
 
-// utils.js
+export const azalt = (miktar) => {
+  sayac -= miktar;
+  return sayac;
+};
 
-// Named export
-export function helloNamed() {
-  return "Hello named export!";
+//! Export Default (Her bir modül için sadece bir tane default export olabilir)
+// export default function selamVer() {
+//   alert("Merhaba FS14")
+// }
+
+export default function () {
+  alert("Elveda JS, Hosgeldin React");
 }
-// Değişkenler de named export olarak kullanılabilir
-export const name = 'Zafer';
-
-// Default export
-export default function helloDefault() {
-  return "Hello default export!";
-}
-
-//? Her fonksiyonda export ifadesi kullanmadan, 
-// ?  tek seferde de export edilebilir
-//! export { helloNamed, name, helloDefault };
-// ?Burada da görüleceği gibi export ve export default ifadeleri bulunmaktadır. Bu ifadelere sırasıyla named export ve default export da denmektedir. Named export sadece belirlenen isimle kullanılabilirken, default export’ta ilgili fonksiyona herhangi bir isim verilebilir.
