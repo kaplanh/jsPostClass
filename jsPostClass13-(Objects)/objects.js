@@ -151,29 +151,29 @@ const car = {
 //!              Object Metotlari
 //* ======================================================
 // ?this in declaration and expression function
-const personel = {
-  name: "Ahmet",
-  surname: "Canan",
-  dob: 1990,
-  salary: 30000,
-  drivingLicense: true,
-  calculateAge: function () {
-    // console.log(this); //? personel objesini refere eder.
-    return new Date().getFullYear() - this.dob;
-  },
+// const personel = {
+//   name: "Ahmet",
+//   surname: "Canan",
+//   dob: 1990,
+//   salary: 30000,
+//   drivingLicense: true,
+//   calculateAge: function () {
+//     // console.log(this); //? personel objesini refere eder.
+//     return new Date().getFullYear() - this.dob;
+//   },
   
 // ?this in arrow function
-  summary: () => {
-    // console.log(this); //? window objesini refere eder.
-    return `${this.name} is ${this.calculateAge()} years old`;
-  },
-};
-console.log(personel);
-console.log(personel.calculateAge());
-console.log(personel.name + " " + personel.surname);
+//   summary: () => {
+//     // console.log(this); //? window objesini refere eder.
+//     return `${this.name} is ${this.calculateAge()} years old`;
+//   },
+// };
+// console.log(personel);
+// console.log(personel.calculateAge());
+// console.log(personel.name + " " + personel.surname);
 
-console.log("AGE:", personel.calculateAge());
-console.log("AGE:", personel.summary());
+// console.log("AGE:", personel.calculateAge());
+// console.log("AGE:", personel.summary());
 
 //! NOT: arrow fonksiyonlari ozellikle callback fonksiyonu olarak
 //! kullanilmak ve bu fonksiyonlarda this keyword kullanim
@@ -214,12 +214,12 @@ console.log("AGE:", personel.summary());
 //* bunu fullName key'i ile saklayan, ayni zamanda age degerlerini 5
 //* arttirarak age key'ine saklayan ve olusan diziyi donduren kodu yazınız.
 
-const teamFullName = team.map((p) => {
-  return {
-    fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
-    age: p.age + 5,
-  };
-});
+// const teamFullName = team.map((p) => {
+//   return {
+//     fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+//     age: p.age + 5,
+//   };
+// });
 
 // //? Alternative way
 // const teamFullName1 = team.map((p) => ({
@@ -239,3 +239,5 @@ const teamFullName = team.map((p) => {
 // //* Ornek6: ortalama yasi hesaplayiniz.
 // const avgAges = team.reduce((sum, person) => sum + person.age, 0) / team.length
 // console.log("AVE AGE:", avgAges)
+
+
