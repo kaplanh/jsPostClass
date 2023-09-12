@@ -52,6 +52,27 @@ console.log("** FUNC DECLARATION **");
 // yazdirParametre("Hola", "FS17");
 // yazdirParametre(12.4, true);
 
+// *Rest Parameters
+// arguments nesnesini arrow function’larda kullanamadığımızı belirtmiştik. Arrow function’larda arguments nesnesi yerine rest parameter’ı kullanarak gönderilen değerlere fonksiyon içerisinde erişim sağlayabilirsiniz. Gönderilen değerler bir array içerisinde tutulduğu için array’e ait tüm metodlardan da faydalanabilirsiniz.
+
+
+// const sum = (...arr) => {
+//     let sum = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+
+//     return sum;
+// };
+
+// console.log(sum(1, 2, 3, 4));
+
+
+
+
+
+
 //! Bir parametreyi cagirma sirasinda kullanmaz isek onun
 //! yerine default parametre atayabiliriz. Ornekteki name
 //! parametresi icin default değer olarak 'Cohort14' atanmistir.
