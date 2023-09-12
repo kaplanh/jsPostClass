@@ -129,6 +129,7 @@
 
 // !switch-case
 // ?soru-1
+
 // let gün = +prompt("1-7 arasinda bir deger gir");
 // switch (gün) {
 //   case 1:
@@ -159,6 +160,31 @@
 // document.querySelector("#switch").innerHTML = gün;
 // console.log(gün);
 // console.log("switch-case karar mekanizmasi bitti");
+
+// ?soru-2
+
+// let ay = prompt("Lütfen ay giriniz").trim();
+
+// //let day = dayUserInput.toLowerCase();
+
+// switch (ay.toLowerCase()) {
+//     case "ocak":
+//     case "mart":
+//     case "temmuz":
+//     case "ağustos":
+//     case "ekim":
+//     case "aralık":
+//         console.log(`${ay} ayı 31 gün çeker`);
+//         break;
+//     case "nisan":
+//     case "haziran":
+//     case "eylül":
+//     case "kasım":
+//         console.log(`${ay} ayı 30 gün çeker`);
+//         break;
+//     default:
+//         console.log("Şubat ayı 28/29 gündür");
+// }
 
 // !if-else,ternary.circuit karsilastirmali bir örnek
 // const age = 18;

@@ -1,7 +1,11 @@
 //* bu bir tek satirlik yorumdur
-// ?bu bir cok satirli yorumdur
-// !bu bir cok satirli yorumdur
-// bu bir cok satirli yorumdur
+// ?b bu bir tek satirlik yorumdur
+// !b bu bir tek satirlik yorumdur
+//TODO
+/* !bu bir cok satirli yorumdur
+ bu bir cok satirli yorumdur*/
+
+
 // ?=  JavaScript'te verileri "görüntülemenin" farklı yolları vardır.  ====
 
 //! ➤ console.log()

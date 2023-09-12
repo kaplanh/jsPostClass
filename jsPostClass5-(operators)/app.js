@@ -140,6 +140,28 @@ const benimSayim = 967;
 
 // const yüzlerBas = Math.floor(benimSayim / 100);
 // document.getElementById("aritmetik").innerHTML = yüzlerBas;
+//*****************************************************
+// let number = 975;
+// let total = 0;
+// let yuzlerBasamagi;
+// let binlerBasamagi;
+
+// let birlerBasamagi =  Math.floor((number%10)/1)
+// console.log(birlerBasamagi);
+// let onlarBasamagi = Math.trunc((number%100)/10);
+// console.log(onlarBasamagi);
+
+// yuzlerBasamagi = Math.floor((number%1000)/100)
+// console.log(yuzlerBasamagi);
+
+// * Alternatif Çözüm 1
+
+// let number = prompt("Please enter a number")
+// for (let i = 0; i < number.length; i++) {
+//     console.log(`${i+1}. basamagi ` +  Math.floor((number%10**(i+1))/10**i));
+// }
+//****************************************************************************
+
 // *üs(**)
 
 // document.getElementById("aritmetik").innerHTML = 2 ** 3;
@@ -227,7 +249,7 @@ const benimSayim = 967;
 // let number1 = ++number;
 // console.log(number1);
 // console.log(number);
-// let number1New = number1++; // önce atadı sonrasında number1 değişkenini bir number1dı
+// let number1New = number1++; // önce atadı sonrasında number1 değişkenini bir number1 di
 // console.log(number1New); // 6
 // console.log(number1); // 7
 // console.log(number1New); // 6
@@ -268,7 +290,7 @@ let num15 = 3;
 // num14 = num14 / num15;
 // num14 /= num15;
 // console.log(num14);
-// //! /= Bölümden Kalanı Bul ve Ata
+// //! %= Bölümden Kalanı Bul ve Ata
 // num14 = num14 % num15;
 // num14 %= num15;
 // console.log(num14);
@@ -443,7 +465,7 @@ let num15 = 3;
 //* ALternatif olarak parseInt() ve parseFloat() da kullanilabilir.
 // const dolarInt = parseInt(dolar) //? tamsayiya cevirir
 // console.log(dolarInt)
-// const tlFloat = parseFloat(tl) //? virgüllü sayiya çevirir
+// const tlFloat = parseFloat(tl) //? ondalikli(virgüllü) sayiya çevirir
 // console.log(tlFloat)
 
 // console.log(parseFloat(null)) //? NaN

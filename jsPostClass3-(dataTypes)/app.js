@@ -103,6 +103,7 @@ console.log(myCar.make);
 // *2.yol
 console.log(myCar[make]);
 
+
 // ?==== DEGISTIRME ======
 // *1.yol
 myCar.make = "Tesla";

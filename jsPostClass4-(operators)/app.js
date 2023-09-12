@@ -90,6 +90,9 @@
 // document.getElementById("aritmetik").innerHTML +=
 //   x + " " + typeof x + "<br/>" + y + " " + typeof y;
 
+//? https://thrkardak.medium.com/%C3%A7eviri-javascriptte-mahalle-bask%C4%B1s%C4%B1-type-coercion-2d2093db3fb4
+
+
 // Number(null)                   // 0
 // Number(undefined)              // NaN
 // Number(true)                   // 1
