@@ -35,12 +35,13 @@
 // console.log(variables instanceof Array); //false
 
 // !Strings immutable değiştirilemez
-// let str = "Brown";
-// console.log(str[0]);
-// str[0] = "b";
-// console.log(str);
+let str = "Brown";
+console.log(str[0]);
+str[0] = "b";
+console.log(str);
 
-// str = 'brown'
+str = "brown";
+console.log(str);
 
 // !Arrayle mutable yani değiştirilebilir
 // const colors = ["Red", "Green", "Blue"];
@@ -303,7 +304,7 @@
 //* orjinal array bozulmaz. Array'i stringe çevirir
 
 //?sort
-
+// *örnk-1
 const arr = [0, 55, 5, 22, 2, 11, 1, 111];
 // arr.sort();
 // console.log(arr);[1, 11, 111, 2, 22, 5, 55];
@@ -311,6 +312,12 @@ const arr = [0, 55, 5, 22, 2, 11, 1, 111];
 // *ascending sorting(artan siralama-kücükten büyüge dogru)
 arr.sort((a, b) => (a = b));
 console.log(arr); // [ 1, 2, 5, 11, 22, 55, 111 ]
+
+// *örnk-1
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.sort()); //['Apple', 'Banana', 'Mango', 'Orange']
+// *terse cevirme
+console.log(fruits.reverse()); //['Orange', 'Mango', 'Banana', 'Apple']
 
 // *descending sorting(azalan siralama-büyükten kücüge dogru)
 // arr.sort((a, b) => b - a); //numeritik olarak sıralar

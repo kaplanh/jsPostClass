@@ -146,6 +146,7 @@
 
 // *\b örnek
 // alert("1- d\bers ");
+
 // !JavaScript String() Function
 // const a = 225; // number
 // const b = true; // boolean
@@ -473,9 +474,9 @@
 
 // !match() method
 
-// let text = "The rain in SPAIN stays mainly in the plain";
-// const str1 = text.match("ain");
-// console.log(str1.length + " " + str1);
+let text = "The rain in SPAIN stays mainly in the plain";
+const str1 = text.match("ain");
+console.log(str1.length + " " + str1);
 
 // const str2 = text.match(/ain/gi);
 // console.log(str2.length + " " + str2);
@@ -511,9 +512,9 @@
 
 // !padEnd();
 
-let text = "5";
-let padded = text.padEnd(4, "0");
-console.log(padded);
+// let text = "5";
+// let padded = text.padEnd(4, "0");
+// console.log(padded);
 
 //! chaining
 // *örnek asagidaki stringden clarusway alip  i CLARUSWAY olarak yazdir
