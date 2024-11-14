@@ -46,7 +46,7 @@
 // }
 // document.querySelector("#if-else").innerHTML = sonuc;
 
-// ?soru-2
+// ?soru-2(Binary sourch algorithm)
 // const sayi1 = +prompt("sayi1 :");
 // const sayi2 = +prompt("sayi2 :");
 // const sayi3 = +prompt("sayi3 :");
