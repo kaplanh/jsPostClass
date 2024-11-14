@@ -101,7 +101,6 @@
 // console.log("ali");
 
 // !TERNARY
-
 // ?soru-1
 // const not = +prompt("Not: ");
 
@@ -126,6 +125,16 @@
 //   : speed >= 90
 //   ? console.log("Normal")
 //   : console.log("Low Speed");
+
+// !(Nested ternary anlasilabilirligi azaltiyor o nedenle pek tercih edilmez bu durumda if-else yapisi aha mantiklidir)
+// const speed=+prompt('Hiziniz: ')
+// if (speed>120) {
+//     console.log('speedy');
+// } else if(speed>=90) {
+//     console.log('Normal');
+// } else {
+//     console.log('Normal');
+// }
 
 // !switch-case
 // ?soru-1
