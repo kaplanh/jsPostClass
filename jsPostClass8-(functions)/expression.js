@@ -23,7 +23,7 @@ function name(params) {
 // console.log(tekYadaCift(5));
 // console.log(tekYadaCift(10));
 
-// ?2.yol
+// ?2.yol(expression yöntemi)
 // let oddEven = function (number) {
 //   return number % 2 === 0 ? "EVEN" : "ODD"
 // }

@@ -13,14 +13,14 @@ ciktiVer();
 //***********************************************/
 
 const enBüyükSayi = (n1, n2, n3) => {
-  let ebs = n1;
-  if (n2 > ebs) {
-    ebs = n2;
-  }
-  if (n3 > ebs) {
-    ebs = n3;
-  }
-  return ebs;
+    let ebs = n1;
+    if (n2 > ebs) {
+        ebs = n2;
+    }
+    if (n3 > ebs) {
+        ebs = n3;
+    }
+    return ebs;
 };
 
 console.log(enBüyükSayi(2, 45, 3));
@@ -43,10 +43,3 @@ console.log(enBüyükSayi(2, 45, 3));
 //? Alternatif olarak
 // const findBiggestShort = (num1, num2, num3) => Math.max(num1, num2, num3);
 // console.log("BIGGEST:", findBiggestShort(1, 3, 2));
-
-// for (let i = 0;i<=6; i++) {
-//   for (let j = 0;  1 <=i ; j++) {
-
-//   }
-//   +console.log('\n'); -
-// }
