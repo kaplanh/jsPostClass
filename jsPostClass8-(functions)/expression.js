@@ -7,6 +7,9 @@ console.log("*** 2-EXPRESSION ****");
 //* ORNEK2:console dan girilen bir sayinin cift mi tek mi oldugunu gösteren programi fonk olarak yazin
 //*********************************************/
 // ?1.yol
+function name(params) {
+    return params % 2 == 0 ? "cift" : "tek";
+}
 // function tekYadaCift(sayi) {
 //   return sayi % 2 == 0 ? "Cift" : "Tek";
 // }

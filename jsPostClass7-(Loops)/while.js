@@ -39,11 +39,11 @@ console.log("****** WHILE *******");
 //! ------  DO - WHILE -------
 let not2;
 do {
-  not2 = prompt("Lütfen 0-100 arasinda bir not giriniz:");
-  // if (not < 0 || not > 100) {
-  //   alert("Not 0'dan küçük veya 100'den büyük olamaz")
-  // }
-  console.log(not2);
+    not2 = prompt("Lütfen 0-100 arasinda bir not giriniz:");
+    // if (not < 0 || not > 100) {
+    //   alert("Not 0'dan küçük veya 100'den büyük olamaz")
+    // }
+    console.log(not2);
 } while (not2 < 0 || not2 > 100);
 
 console.log("Notunuz:", not2);
@@ -51,8 +51,8 @@ console.log("Notunuz:", not2);
 //! ------  FOR -------
 let not3 = prompt("Lütfen 0-100 arasinda bir not giriniz:");
 for (; not3 < 0 || not3 > 100; ) {
-  alert("Not 0'dan küçük veya 100'den büyük olamaz");
-  not = prompt("Lütfen 0-100 arasinda bir not giriniz:");
+    alert("Not 0'dan küçük veya 100'den büyük olamaz");
+    not = prompt("Lütfen 0-100 arasinda bir not giriniz:");
 }
 
 console.log("Notunuz:", not3);
@@ -65,31 +65,33 @@ console.log("OYUN BASLASIN");
 
 let devam;
 do {
-  let hak = 3;
-  const rasgeleSayi = Math.floor(Math.random() * 100 + 1);
-  // console.log(rasgeleSayi);
+    let hak = 3;
+    const rasgeleSayi = Math.floor(Math.random() * 100 + 1);
+    // console.log(rasgeleSayi);
 
-  do {
-    const tahmin = Number(prompt("Lütfen 0-100 arasinda bir sayi giriniz:"));
-    hak -= 1;
-    if (tahmin === rasgeleSayi) {
-      console.log(`Tebrikler ${3 - hak}. denemede bildiniz.🥳`);
-      break;
-    } else {
-      console.log(`Dikkat ${hak} hakkiniz kaldi`);
-      if (tahmin < rasgeleSayi) {
-        console.log("ARTTIR ⬆️");
-      } else {
-        console.log("AZALT ⬇️");
-      }
+    do {
+        const tahmin = Number(
+            prompt("Lütfen 0-100 arasinda bir sayi giriniz:")
+        );
+        hak -= 1;
+        if (tahmin === rasgeleSayi) {
+            console.log(`Tebrikler ${3 - hak}. denemede bildiniz.🥳`);
+            break;
+        } else {
+            console.log(`Dikkat ${hak} hakkiniz kaldi`);
+            if (tahmin < rasgeleSayi) {
+                console.log("ARTTIR ⬆️");
+            } else {
+                console.log("AZALT ⬇️");
+            }
+        }
+    } while (hak > 0);
+
+    if (hak === 0) {
+        console.log("Üzgünüz oyunu kaybettiniz 😔");
     }
-  } while (hak > 0);
 
-  if (hak === 0) {
-    console.log("Üzgünüz oyunu kaybettiniz 😔");
-  }
-
-  devam = prompt("Yeniden oynamak ister misiniz e/h?");
+    devam = prompt("Yeniden oynamak ister misiniz e/h?");
 } while (devam == "e" || devam == "E");
 
 console.log("Yine bekleriz");

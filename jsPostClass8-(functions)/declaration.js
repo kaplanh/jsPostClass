@@ -2,31 +2,35 @@
 // ?           FUNCTIONS
 // ? ======================================
 
+//!1- Imperative programming:
+// Programın doğrusal olarak sırayla çalışması, programcının adım adım işlemleri takip etmesine olanak tanır ve daha karmaşık programların geliştirilmesine yardımcı olur.
 // ?Structural programming (yapısal programlama),
 //  programcılar kontrol yapılarını(if-else, switch-case, for, while, do -while gibi) kullanarak, programın işlem akışını belirlerler.Bu yapılar, kodun anlaşılır ve bakımı kolay hale gelmesini sağlar.
 //? Procedural programming:
 // Proje sürecinde problemi alt parçalara ayırarak, fonksiyonlar ve alt programlar oluşturarak daha modüler bir kod yapısı elde edilir.
+
+//!2-Declarative programming:
+// Sonucu ifade eden ifadeler kullanarak, kodun nasıl çalıştığını detaylı olarak belirtmek yerine sadece ne yapması gerektiğini ifade eder, bu da kodun daha anlaşılır ve kısa olmasını sağlar.
 //? Functional programming:
 // Değişken değerlerinin yerine fonksiyonların kullanımı, kodun daha anlaşılır ve işlevsel olmasını sağlar.
-//? Imperative programming:
-// Programın doğrusal olarak sırayla çalışması, programcının adım adım işlemleri takip etmesine olanak tanır ve daha karmaşık programların geliştirilmesine yardımcı olur.
-// ?Declarative programming:
-// Sonucu ifade eden ifadeler kullanarak, kodun nasıl çalıştığını detaylı olarak belirtmek yerine sadece ne yapması gerektiğini ifade eder, bu da kodun daha anlaşılır ve kısa olmasını sağlar.
+
 console.log("** FUNC DECLARATION **");
 
 //* ORNEK1:
 //*****************************************/
 
 //! Declaration (Fonksiyonun tanimlanmasi)
-// function yazdirMerhaba() {
-//   // alert("Merhaba FS14")
-//   console.log("Merhaba FS14");
-// }
+/*function yazdirMerhaba() {
+//     // alert("Merhaba FS14")
+      console.log("Merhaba FS14");
+//     // console.log("Merhaba FS14 " + arguments[0]); //Merhaba FS14 1
+}
+*/
 
 //! Declaration (Fonksiyonun cagrilmasi)
 // yazdirMerhaba(); //! invoke, call
 // yazdirMerhaba(); //! invoke, call
-// yazdirMerhaba(); //! invoke, call
+// yazdirMerhaba(1, 3); //! invoke, call
 
 //* ORNEK2:
 //*****************************************/
@@ -50,11 +54,10 @@ console.log("** FUNC DECLARATION **");
 // yazdirParametre("Hello", "FS15");
 // yazdirParametre("Salut", "FS16");
 // yazdirParametre("Hola", "FS17");
-// yazdirParametre(12.4, true);
+// yazdirParametre(12.4, true);//?parametre degeri string olmasina ragmen number yada boolean verebildik js bunu kabul ediyor js typesave bir dil olmadigi icin usestrict yada typescriptle bu problemi cözmeye calisiyor
 
 // *Rest Parameters
 // arguments nesnesini arrow function’larda kullanamadığımızı belirtmiştik. Arrow function’larda arguments nesnesi yerine rest parameter’ı kullanarak gönderilen değerlere fonksiyon içerisinde erişim sağlayabilirsiniz. Gönderilen değerler bir array içerisinde tutulduğu için array’e ait tüm metodlardan da faydalanabilirsiniz.
-
 
 // const sum = (...arr) => {
 //     let sum = 0;
@@ -67,11 +70,6 @@ console.log("** FUNC DECLARATION **");
 // };
 
 // console.log(sum(1, 2, 3, 4));
-
-
-
-
-
 
 //! Bir parametreyi cagirma sirasinda kullanmaz isek onun
 //! yerine default parametre atayabiliriz. Ornekteki name
@@ -104,14 +102,14 @@ console.log("** FUNC DECLARATION **");
 
 //* new Date() object:
 //*****************************************/
-// console.log(new Date()); //? Sistem tarihi ve saatini verir.
-// console.log(new Date().getFullYear());
-// console.log(new Date().getMonth());
-// console.log(new Date().getDay());
-// console.log(new Date().getTime());
-// console.log(new Date().getMinutes());
-// console.log(new Date().getSeconds());
-// console.log(new Date().getUTCMilliseconds());
+// console.log(new Date()); //? Sun Nov 17 2024 01:10:09 GMT+0100 (Orta Avrupa Standart Saati) Sistem tarihi ve saatini verir.
+// console.log(new Date().getFullYear());//2024
+// console.log(new Date().getMonth());//10
+// console.log(new Date().getDay());//0:pazar, 1:pazartesi...
+// console.log(new Date().getTime());//1731802274375
+// console.log(new Date().getMinutes());//11
+// console.log(new Date().getSeconds());//14
+// console.log(new Date().getUTCMilliseconds());//376
 
 //* ORNEK5(fonksiyonu degiskene atayip sonra cagirma-return ):
 //******************************************/
@@ -178,6 +176,11 @@ console.log("** FUNC DECLARATION **");
 //   return num % 2 === 0 ? "EVEN" : "ODD";
 // }
 
+//? Alternatif olarak
+// function isEvenOrOdd(num) {
+//   return !(num % 2) ? "EVEN" : "ODD";
+// }
+
 // const num = prompt("Please enter a number:");
 // console.log(`${num} is ${isEvenOrOdd(num)}`);
 //* ORNEK8:
@@ -202,12 +205,12 @@ console.log("** FUNC DECLARATION **");
 
 // console.log(negatifOrPositif(2))=;
 // *NOT
-// bu yazim seklinde fonksiyon tanimlanmadan öncede cagriabiliyor
+// bu yazim seklinde fonksiyon tanimlanmadan öncede cagrilabiliyor
 // yazdirMerhaba() //? hoisting oluyor (var değişkenleri)
 
 // function yazdirMerhaba() {
-//   console.log("Merhaba FS14")
+//     console.log("Merhaba FS14");
 // }
-// yazdirMerhaba()
 
+// yazdirMerhaba();
 //* ----------------------------
