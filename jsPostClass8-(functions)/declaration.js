@@ -214,3 +214,5 @@ console.log("** FUNC DECLARATION **");
 
 // yazdirMerhaba();
 //* ----------------------------
+//! LIFO:last input first Out(ilk giren son cikar
+//  sarjor veya minübüslerdeki bozuk para toplayan aletde oldugu gibi)

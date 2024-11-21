@@ -4,6 +4,10 @@
 
 console.log("*** ARROW ****");
 
+const birthday = () => {
+    let a = propmpt("d.yili: ");
+    return a - new Date().getFullYear();
+};
 //* ORNEK: 3 sayinin en buyugunu bulan fonks.
 //***********************************************/
 
