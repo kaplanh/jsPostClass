@@ -4,10 +4,6 @@
 
 console.log("*** ARROW ****");
 
-const birthday = () => {
-    let a = propmpt("d.yili: ");
-    return a - new Date().getFullYear();
-};
 //* ORNEK: 3 sayinin en buyugunu bulan fonks.
 //***********************************************/
 
@@ -50,6 +46,12 @@ const birthday = () => {
 
 // console.log(`AGE:${calculateAge(1990)}`);
 
+// ?2.yol
+// const birthday = () => {
+//     let a = propmpt("d.yili: ");
+//     return a - new Date().getFullYear();
+// };
+
 //* ORNEK: Silindir Hacmi
 //******************************************/
 //? hacim = Pi x r x r x h
@@ -67,6 +69,8 @@ const birthday = () => {
 //? kullanilabilir. 5 degeri tam ve kesir icin toplam 5 basamak kullan demektir.
 // console.log("VOLUME:", volume(r, h).toExponential(5));
 //? toExponential() ise bir sayinin bilimsel (10 uzeri) olarak
+
+// ? 3 üde stringe döndürür
 
 //* ORNEK: Dairenin Alani
 //******************************************/
