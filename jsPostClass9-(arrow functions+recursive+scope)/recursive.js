@@ -9,67 +9,8 @@
 
 console.log("*** RECURSION ***");
 
-//* ORNEK: Girilen sayinin faktoriyelini hesaplayan programi
-//* recursive fonksiyonlar yardımıyla kodlayiniz.
-//? Faktoriel terimleri:  n! = n * (n-1)!
-
-//? Fakto(5) => 5.4.3.2
-
-// const fakto = (n) => {
-//   if (n <= 1) {
-//     return 1;
-//   } else {
-//     return n * fakto(n - 1);
-//   }
-// };
-
-// const number = +prompt("n:");
-
-// number < 0
-//   ? alert("Number should be bigger than zero")
-//   : console.log(`Fakto(${number})= ${fakto(number)}`);
-
 //* ORNEK: Bir fonksiyon icerisinde baska fonksiyonlar cagrilabilir (Hesap Makinası)
 //**************************************************/
-
-const topla = (n1, n2) => n1 + n2;
-const cikar = (n1, n2) => n1 - n2;
-const carp = (n1, n2) => n1 * n2;
-const böl = (n1, n2) => n1 / n2;
-
-const n1 = Number(prompt("n1:"));
-const n2 = Number(prompt("n2:"));
-const operator = prompt("('+', '-', '*', '/')  operator:");
-
-const islem = (n1, operator, n2) => {
-  let sonuc = 0;
-  switch (operator) {
-    case "+":
-      // sonuc = n1 + n2;
-      sonuc = topla(n1, n2);
-      break;
-    case "-":
-      // sonuc = n1 - n2;
-      sonuc = cikar(n1, n2);
-      break;
-    case "*":
-      // sonuc = n1 * n2;
-      sonuc = carp(n1, n2);
-      break;
-    case "/":
-      // sonuc = n1 / n2;
-      sonuc = böl(n1, n2);
-      break;
-
-    default:
-      alert("Yanlis operatör girdiniz");
-      sonuc = "";
-      break;
-  }
-  return sonuc;
-};
-
-console.log(`${n1}${operator}${n2} = ${islem(n1, operator, n2)}`);
 
 // const add = (n1, n2) => n1 + n2;
 // const sub = (n1, n2) => n1 - n2;
@@ -131,3 +72,61 @@ console.log(`${n1}${operator}${n2} = ${islem(n1, operator, n2)}`);
 // number < 0
 //   ? alert("Number should be bigger than zero")
 //   : console.log(`Fakto(${number})= ${fakto(number)}`);
+
+//! recursive fonksiyonlar yardımıyla kodlayiniz.
+//? Faktoriel terimleri:  n! = n * (n-1)!
+
+//? Fakto(5) => 5.4.3.2
+
+// const fakto = (n) => {
+//   if (n <= 1) {
+//     return 1;
+//   } else {
+//     return n * fakto(n - 1);
+//   }
+// };
+
+// const number = +prompt("n:");
+
+// number < 0
+//   ? alert("Number should be bigger than zero")
+//   : console.log(`Fakto(${number})= ${fakto(number)}`);
+
+//! ÖDEV
+// fibonacci serisini hesaplayan bir kod yaz
+//! ITERASYON YONTEMI ILE
+function itereFibonacci(num) {
+    var before = 0;
+    var actual = 1;
+    var next = 1;
+
+    for (let i = 0; i < num; i++) {
+        console.log(next);
+        before = actual + next;
+        actual = next;
+        next = before;
+    }
+}
+
+itereFibonacci(100);
+//! recursive fonksiyonlar yardımıyla kodlayiniz.
+
+// program to display fibonacci sequence using recursion
+function fibonacci(num) {
+    if (num < 2) {
+        return num;
+    } else {
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+}
+
+// take nth term input from the user
+const nTerms = prompt("Enter the number of terms: ");
+
+if (nTerms <= 0) {
+    console.log("Enter a positive integer.");
+} else {
+    for (let i = 0; i < nTerms; i++) {
+        console.log(fibonacci(i));
+    }
+}
